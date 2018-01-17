@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ship Locations!</title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+<header>
+    <h2>Ship Locations</h2>
+
+    <h3 id="gamePlayerIndicator"></h3>
+    <button type="button" id="gameview-log-out" name="logout">Log Out</button>
+    <button type="button" id="back-to-games">Back</button>
+    <button type="button" id="place-ships">Place Ships</button>
+
+</header>
+
+<div id="tables">
+    <table class="table" id="shipsTable">
+        <thead id="table1-headers">
+        <tr id="headers1">
+            <td></td>
+        </tr>
+        </thead>
+        <tbody id="table-rows1">
+
+        </tbody>
+    </table>
+
+    <table class="table" id="salvoesTable">
+        <thead id="table2-headers">
+        <tr id="headers2">
+            <td></td>
+        </tr>
+        </thead>
+        <tbody id="table-rows2">
+
+        </tbody>
+    </table>
+</div>
+
+
+
+<script src="game.js"></script>
+
+</body>
+</html>

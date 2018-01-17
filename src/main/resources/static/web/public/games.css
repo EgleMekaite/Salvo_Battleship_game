@@ -1,0 +1,202 @@
+body {
+    background-image: url("background1-0-0.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+
+    font-weight: 700;
+    text-align: center;
+    margin:0;
+    vertical-align: middle;
+    width: 60%;
+    font-size: 42px;
+    color: white;
+}
+
+.content
+  {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+
+ }
+
+ .userinfo {
+    display: flex;
+    justify-content: space-between;
+
+ }
+ .userinfo > input {
+    display: inline-block;
+    width: 48%;
+    margin:0;
+  }
+
+.games {
+    display: inline-block;
+    width: 60%;
+    padding: 2%;
+    background: rgba(255,255,255,0.5);
+    border-radius: 6px;
+}
+.btn {
+    width: 44px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.leader_board {
+    display: inline-block;
+    width: 36%;
+    padding: 2%;
+    background: rgba(255,255,255,0.5);
+    border-radius: 6px;
+}
+header > h1,
+.sign-in-form {
+    display: inline-block;
+}
+header {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    background: rgba(0,0,0,0.5);
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+h3 {
+margin-left: 10%;
+}
+#leaderTable-headers,
+ #gamesTable-headers {
+    font-weight: 700;
+}
+
+.loginBtn {
+    box-sizing: border-box;
+    position: relative;
+    /* width: 13em;  - apply for fixed size */
+    margin: 0.2em;
+    padding: 0 15px 0 46px;
+    border: none;
+    text-align: left;
+    line-height: 34px;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.loginBtn:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+}
+
+.loginBtn:focus {
+    outline: none;
+}
+
+.loginBtn:active {
+    box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+
+.quickstart-buttons {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-around;
+}
+
+#sign-up,
+#log-in {
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+    float: left;
+    position: relative;
+
+    /* Styles */
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+
+    /* Font styles */
+
+    font-size: 16px;
+    line-height: 30px;
+    /* Same as height */
+    text-align: center;
+
+    background: linear-gradient(darkgrey, white);
+    border: 1px solid white;
+    color: black;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+
+}
+#log-out {
+        width: 100%;
+        margin-top: 8px;
+        height: 30px;
+        float: left;
+        position: relative;
+
+        /* Styles */
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+        cursor: pointer;
+
+        /* Font styles */
+
+        font-size: 16px;
+        line-height: 30px;
+        /* Same as height */
+        text-align: center;
+
+        background: linear-gradient(darkgrey, white);
+        border: 1px solid white;
+        color: black;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+}
+#create-game {
+    background: linear-gradient(#a94442, white);
+    border: 1px solid white;
+    color: black;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    height: 36px;
+    border-radius: 4px;
+}
+#loggedinuserinfo {
+    font-size: 16px;
+    text-align: center;
+}
+#loggedinuserinfo > span {
+    padding: 4px;
+    background-color: white;
+}
+.sign-in-form {
+    padding: 8px;
+    background: rgba(51,51,51,0.5);
+    border-radius: 6px;
+    color: black;
+}

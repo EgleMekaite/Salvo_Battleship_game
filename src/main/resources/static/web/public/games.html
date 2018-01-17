@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salvo!</title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Mustache -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Welcome to Salvo BattleShip!</h1>
+
+        <div class="sign-in-form">
+
+            <div id="loggedinuserinfo" style="display: none">
+                <span>Logged in: <span id="loggedInUserName"></span></span>
+                <div class="logout"  id="logout" style="display: none">
+                    <button type="button" id="log-out" name="logout">Log Out</button>
+                </div>
+            </div>
+
+            <div class="userinfo"  id="userinfo">
+
+                    <input type="text" placeholder="Username" id="username">
+
+                    <input type="password" placeholder="Password" class="showpassword" id="password">
+
+            </div>
+
+            <div class="quickstart-buttons">
+                <button type="button" id="log-in" name="login">Log In</button>
+                <button type="button" id="sign-up" name="signup">Sign Up</button>
+
+            </div>
+
+        </div>
+
+        <button type="button" id="create-game" name="creategame" style="display:none">Create a New Game</button>
+
+    </header>
+
+    <div class="container">
+
+        <div class="content">
+
+            <div class="games">
+                <h3>List of Games</h3>
+                <table class="table">
+                    <thead id="gamesTable-headers">
+                    <tr>
+                        <td>Creation Date</td>
+                        <td>Player 1</td>
+                        <td>Player 2</td>
+                        <td></td>
+                    </tr>
+                    </thead>
+                    <tbody id="gamesTable-rows">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="leader_board">
+                <h3>Leader Board</h3>
+                <table class="table">
+                    <thead id="leaderTable-headers">
+                    <tr>
+                        <td>Name</td>
+                        <td>Total</td>
+                        <td>Won</td>
+                        <td>Lost</td>
+                        <td>Tied</td>
+                    </tr>
+                    </thead>
+                    <tbody id="leaderTable-rows">
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script type="text/html" id="leaderBoard-template">
+        {{#players}}
+        <tr>
+
+            <td>{{username}}</td>
+            <td>{{totalScore}}</td>
+            <td>{{totalWins}}</td>
+            <td>{{totalLosts}}</td>
+            <td>{{totalTied}}</td>
+
+        </tr>
+        {{/players}}
+    </script>
+
+    <script src="games.js"></script>
+
+</body>
+</html>
